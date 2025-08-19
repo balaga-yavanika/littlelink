@@ -18,11 +18,13 @@
 /* Global Button Hover Effect
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button:hover,button:hover {
-  filter:brightness(90%);
-  transform: rotate(-3deg) ;
+  filter: brightness(1.2) saturate(1.3);
+  transform: scale(1.05) rotate(-3deg) ;
   transition: all 0.5s ease;
+  box-shadow: 0 0 15px rgba(16, 16, 16, 0.8);
 
 }
+
 
 /* Button Icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -174,6 +176,12 @@
 .button-gumroad {
   --button-text:#FFFFFF;
   --button-background:#000000;
+  --button-border:1px solid #FFFFFF;
+}
+/* Gumroad */
+.button-gumroad-alt {
+  --button-text:#161616;
+  --button-background:#ff90e8;
   --button-border:1px solid #FFFFFF;
 }
 

@@ -19,7 +19,9 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button:hover,button:hover {
   filter:brightness(90%);
-  transform:translateY(-1px);
+  transform: rotate(-3deg) ;
+  transition: all 0.5s ease;
+
 }
 
 /* Button Icons

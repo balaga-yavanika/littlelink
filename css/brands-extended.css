@@ -176,13 +176,13 @@
 .button-gumroad {
   --button-text:#FFFFFF;
   --button-background:#000000;
-  --button-border:1px solid #FFFFFF;
+  --button-border:1px solid #1e1e1e;
 }
 /* Gumroad */
 .button-gumroad-alt {
   --button-text:#161616;
   --button-background:#ff90e8;
-  --button-border:1px solid #FFFFFF;
+  --button-border:1px solid #1e1e1e;
 }
 
 /* HackerEarth */

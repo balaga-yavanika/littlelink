@@ -105,13 +105,14 @@
 .button-behance {
 	--button-text:#ffffff;
 	--button-background:#0057FF;
-  --button-border:1px solid #FFFFFF;
+  --button-border:1px solid #1e1e1e;
 }
 
 /* Bluesky */
 .button-bluesky {
 	--button-text:#FFFFFF;
 	--button-background:#1185FE;
+	--button-border:1px solid #1e1e1e;
 }
 
 /* Bluesky Alt */
@@ -125,6 +126,7 @@
 .button-coffee {
 	--button-text:#000000;
 	--button-background:#ffdd00;
+	--button-border:1px solid #1e1e1e;
 }
 
 /* Cal.com */
@@ -222,7 +224,7 @@
 .button-github {
 	--button-text:#ffffff;
 	--button-background:#000000;
-	--button-border:1px solid #FFFFFF;
+	--button-border:1px solid #1e1e1e;
 }
 
 /* GitLab */
@@ -241,7 +243,7 @@
 .button-goodreads {
 	--button-text:#333333;
 	--button-background:#f3f1e6;
-	--button-border:1px solid #212121;
+	--button-border:1px solid #1e1e1e;
 }
 
 /* Google Black */
@@ -276,6 +278,7 @@
 .button-instagram {
 	--button-text:#ffffff;
 	background-image:linear-gradient(-135deg,#1400c8,#b900b4,#f50000);
+	--button-border:1px solid #1e1e1e;
 }
 
 /* Kick */
@@ -308,7 +311,7 @@
 .button-ko-fi {
 	--button-text:#ffffff;
 	--button-background:#000000;
-  --button-border:1px solid #FFFFFF;
+ 	--button-border:1px solid #1e1e1e;
 }
 
 /* Last.fm */
@@ -334,7 +337,7 @@
 .button-linked {
 	--button-text:#ffffff;
 	--button-background:#2867b2;
-	--button-border:1px solid #FFFFFF;
+	--button-border:1px solid #1e1e1e;
 }
 
 /* Mailchimp */
@@ -374,7 +377,7 @@
 .button-medium {
 	--button-text:#ffffff;
 	--button-background:#000000;
-	--button-border:1px solid #FFFFFF;
+	--button-border:1px solid #1e1e1e;
 }
 
 /* Microsoft */
@@ -389,7 +392,7 @@
 	--button-text:#000000;
 	--button-background:#ffffff;
 	/* --button-border:1px solid #212121; */
-	--button-border:1px solid #fff;
+	--button-border:1px solid #1e1e1e;
 }
 
 /* Obsidian */
@@ -399,11 +402,6 @@
 	--button-border:1px solid #ffffff;
 }
 
-/* OnlyFans */
-.button-onlyfans {
-	--button-text:#ffffff;
-	--button-background:#00AEEF;
-}
 
 /* Patreon */
 .button-patreon {

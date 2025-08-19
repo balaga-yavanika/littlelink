@@ -244,6 +244,50 @@ a:hover {
 	color:#083BDA;
 	
 }
+@property --angle {
+          syntax: '<angle>';
+          initial-value: 0deg;
+          inherits: false;
+        }
+
+
+
+.glow-btn {
+	/* Shape and style */
+	border: none;
+	border-radius: 10px; 
+	cursor: pointer;
+	
+	background: 
+	radial-gradient(#fff 1px, transparent 1px),
+	
+	radial-gradient(
+		circle at center,
+		#9700b5 0%,
+		#9700b5 5%, 
+		transparent 60% 
+	),
+	
+	conic-gradient(
+		from var(--angle),
+		#9700b5, 
+		#e15c0a, 
+		#ffaa00, 
+		#9700b5 
+	); 
+
+
+	/* Apply the animation */
+	animation: spin 5s linear infinite;
+}
+
+
+/* The animation just changes the --angle property over time */
+@keyframes spin {
+	to {
+	--angle: 360deg;
+	}
+}
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -259,7 +303,7 @@ a:hover {
 	text-decoration:none;
 	white-space:normal;
   	background-color:var(--button-background,transparent);
-	color:var(--button-text,#000000);
+	/* color:var(--button-text,#000000); */
 	border:var(--button-border,none);
 	border-radius:0.5rem;
 	cursor:pointer;

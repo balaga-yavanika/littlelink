@@ -102,8 +102,34 @@ img.spin-hover:hover {
   box-shadow: 0 0 30px 6px rgba(225, 92, 10,0.5);
 }
 
+/* SVG
+   ------------------------------------------------------------ */
 
+.frame-wrapper {
+  position: relative;
+  display: inline-block;/* shrink to text size */
+  /* padding: 3rem 3rem;  breathing room */
+}
 
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;     /* scale frame a bit bigger than text */
+  height: 50%;
+  transform: translate(55%, -120%);
+  pointer-events: none; /* frame won't block clicks */
+}
+
+.text {
+  position: relative;
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing:2;
+}
+
+/* --- */
 
 
 /* Typography

@@ -32,7 +32,7 @@ div[style*='font-family: "Avenir Book"'] {
 #bmc-iframe{
 	/* width: 90% !important; */
 	min-height: 80% !important;
-	max-height: 90% !important;
+	max-height: 100% !important;
 
 }
 
@@ -513,7 +513,7 @@ body {
 
 /* Footer */
 footer {
-	margin: var(--spacing-xxl) 0;
+	margin: var(--spacing-xl) 0;
 	/* 4rem (64px) top and bottom */
 	font-size: var(--scale-0);
 }

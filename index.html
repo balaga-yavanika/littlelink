@@ -43,8 +43,14 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="whyaweeye25" data-description="Support me on Buy me a coffee!" data-message="Like what you see? You can Buy me a Coffee." data-color="#e15c0a" data-position="Right" data-x_margin="13" data-y_margin="13"></script>
+
 
 </head>
+
+ <div id="loading-screen">
+    <span class="loader"></span>
+  </div>
 
 <body>
   <section class="hero"></section>
@@ -74,7 +80,7 @@
             </h1> -->
 
       <div class="frame-wrapper">
-        <img class="frame" src="/images/047.svg" />
+        <!-- <img class="frame" src="/images/047.svg" /> -->
         <span class="text">Yavanika</span>
       </div>
 
@@ -150,24 +156,37 @@
 
 
   <script>
- const audio = document.getElementById("cosmic-audio");
-const playBtn = document.getElementById("play-sound");
-const icon = playBtn.querySelector("i");
 
-let isPlaying = false;
+     window.addEventListener("DOMContentLoaded", function() {
+    const loader = document.getElementById("loading-screen");
+    const content = document.getElementById("content");
 
-playBtn.addEventListener("click", () => {
-  if (isPlaying) {
-    audio.pause();
-    icon.classList.remove("fa-volume-high");
-    icon.classList.add("fa-volume-xmark");
-  } else {
-    audio.play().catch(err => console.log("Playback failed:", err));
-    icon.classList.remove("fa-volume-xmark");
-    icon.classList.add("fa-volume-high");
-  }
-  isPlaying = !isPlaying;
-});
+    // hide loader after 1 second
+    setTimeout(() => {
+      loader.style.display = "none";
+      content.style.display = "block";
+    }, 1000); // 1000ms = 1 second
+  });
+
+
+    const audio = document.getElementById("cosmic-audio");
+    const playBtn = document.getElementById("play-sound");
+    const icon = playBtn.querySelector("i");
+
+    let isPlaying = false;
+
+    playBtn.addEventListener("click", () => {
+      if (isPlaying) {
+        audio.pause();
+        icon.classList.remove("fa-volume-high");
+        icon.classList.add("fa-volume-xmark");
+      } else {
+        audio.play().catch(err => console.log("Playback failed:", err));
+        icon.classList.remove("fa-volume-xmark");
+        icon.classList.add("fa-volume-high");
+      }
+      isPlaying = !isPlaying;
+    });
   </script>
 
 </body>

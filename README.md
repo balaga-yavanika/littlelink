@@ -1,3 +1,7 @@
+<b>[PERSONAL]</b> -
+
+
+
 ![Logo](https://cdn.cottle.cloud/GitHub/LittleLink/littlelink.gif)
 
 # LittleLink

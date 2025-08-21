@@ -9,43 +9,46 @@
 
 <html class="theme-auto" lang="en"> <!-- Update`class="theme-auto" with your preference -->
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Page Title - Change this to your name/brand (50-60 characters recommended) -->
-    <title>Yav Bio Links</title>
-    <link rel="icon" type="image/x-icon" href="/images/Y-Logo-orangebg_circle.png"> <!-- Update this with your own favicon -->
+  <!-- Page Title - Change this to your name/brand (50-60 characters recommended) -->
+  <title>Yav Bio Links</title>
+  <link rel="icon" type="image/x-icon" href="/images/Y-Logo-orangebg_circle.png">
+  <!-- Update this with your own favicon -->
 
-    <!-- Meta Description - Write a description (150-160 characters recommended) -->
-    <meta name="description" content="Replace this with your own, this appears in search results and when sharing.">
+  <!-- Meta Description - Write a description (150-160 characters recommended) -->
+  <meta name="description" content="Replace this with your own, this appears in search results and when sharing.">
 
-    <!-- Keywords -->
-    <meta name="keywords" content="your name, industry, and specialties">
+  <!-- Keywords -->
+  <meta name="keywords" content="your name, industry, and specialties">
 
-    <!-- Canonical URL - Helps prevent duplicate content issues -->
-    <meta rel="canonical" href="https://yourwebsite.com">
+  <!-- Canonical URL - Helps prevent duplicate content issues -->
+  <meta rel="canonical" href="https://yourwebsite.com">
 
-    <!-- Author Information -->
-    <meta name="author" content="Yavanika">
+  <!-- Author Information -->
+  <meta name="author" content="Yavanika">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/brands.css">
-    <link rel="stylesheet" href="css/brands-extended.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/brands.css">
+  <link rel="stylesheet" href="css/brands-extended.css">
 
-    <!-- LittleLink Extended Stylesheet (Optional) -->
-    <!-- <link rel="stylesheet" href="css/brands-extended.css"> -->
-    <!-- Learn more at https://github.com/sethcottle/littlelink-extended.
+  <!-- LittleLink Extended Stylesheet (Optional) -->
+  <!-- <link rel="stylesheet" href="css/brands-extended.css"> -->
+  <!-- Learn more at https://github.com/sethcottle/littlelink-extended.
          Remove comments if you've added LittleLink Extended dependencies -->
 
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
 
 <body>
   <section class="hero"></section>
   <div class="container">
-
 
     <div class="column">
 
@@ -57,6 +60,11 @@
 
               Be sure to replace the src with your own image path and update the alt text
             -->
+      <div id="play-sound">
+        <i class="fa-solid fa-volume-xmark"></i>
+        <span class="tooltip-text">Play Music</span>
+      </div>
+
       <img class="avatar avatar--rounded spin-hover" src="images/Y-Logo-orangebg_circle.png"
         srcset="images/Y-Logo-orangebg_circle.png" alt="Y-Logo">
 
@@ -135,7 +143,32 @@
 
 
   </div>
+  <audio id="cosmic-audio" loop>
+    <source src="audio/cosmic-1.mp3" type="audio/mpeg">
+  </audio>
 
+
+
+  <script>
+ const audio = document.getElementById("cosmic-audio");
+const playBtn = document.getElementById("play-sound");
+const icon = playBtn.querySelector("i");
+
+let isPlaying = false;
+
+playBtn.addEventListener("click", () => {
+  if (isPlaying) {
+    audio.pause();
+    icon.classList.remove("fa-volume-high");
+    icon.classList.add("fa-volume-xmark");
+  } else {
+    audio.play().catch(err => console.log("Playback failed:", err));
+    icon.classList.remove("fa-volume-xmark");
+    icon.classList.add("fa-volume-high");
+  }
+  isPlaying = !isPlaying;
+});
+  </script>
 
 </body>
 

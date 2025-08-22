@@ -452,6 +452,7 @@ h1 {
 	font-size: 16px;
 	/* Using a 1.25 modular scale for typography */
 	--scale-0: 1rem;
+	--scale-00: 0.8rem;
 	/* 16px */
 	--scale-1: 1.25rem;
 	/* 20px */
@@ -517,7 +518,7 @@ body {
 
 .container p {
 	margin: 0 0 var(--spacing-xl) 0;
-	font-size: var(--scale-1);
+	/* font-size: var(--scale-1); */
 	line-height: 1.6;
 }
 
@@ -528,10 +529,12 @@ body {
 }
 
 /* Footer */
-footer {
-	margin: var(--spacing-xxl) 0;
+.footer {
+	/* margin: var(--spacing-xxl) 1; */
 	/* 4rem (64px) top and bottom */
-	font-size: var(--scale-0);
+	font-size: var(--scale-00);
+	/* font-size: 1px; */
+	color: #6f6f6f;
 }
 
 /* Responsive adjustments */

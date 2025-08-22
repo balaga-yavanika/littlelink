@@ -36,11 +36,11 @@ div[style*='font-family: "Avenir Book"'] {
 
 } */
 
-/* #bmc-wbtn {
+ #bmc-wbtn {
   z-index: 2 !important;
-  transform: scale(0.9) !important;
+  /* transform: scale(0.9) !important; */
   
-} */
+} 
 
 /* loader */
 
